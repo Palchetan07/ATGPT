@@ -48,7 +48,7 @@ class _ChatScreenState extends State<ChatScreen> {
       model: kTextDavinci2,
     );
     _subscription = openAI
-        .build(token: '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')
+        .build(token: 'apikey')
         .onCompletionStream(request: request)
         .listen((response) {
       ChatMessage botMessage = ChatMessage(
